@@ -4,8 +4,13 @@ $P-Moderate-cyan: hsl(176, 50%, 47%);
 $P-Dark-cyan: hsl(176, 72%, 28%);
 $N-Black: hsl(0, 0%, 0%);
 $N-Dark-gray: hsl(0, 0%, 48%);
+$Font-Weight-400:400;
+$Font-Weight-500:500;
+$Font-Weight-700:700;
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,11 +19,12 @@ $N-Dark-gray: hsl(0, 0%, 48%);
 body {
   font-size: 16px;
   font-family: 'Commissioner', sans-serif;
-  font-weight: 400;
+  font-weight: $Font-Weight-400;
   background: rgba($N-Dark-gray, 0.1);
 }
 
 .container {
+  display: flex;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -31,6 +37,34 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+p {
+  margin-top: 1.5rem;
+}
+
+p {
+  color: $N-Dark-gray;
+}
+
+.border-radius {
+  border-radius: 6px;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-P-color {
+  background: $P-Moderate-cyan;
+  color: #FFF;
+  border-radius: 100vw;
+}
+
 #main {
   #header {
     height: 50vh;
@@ -41,7 +75,6 @@ a {
       padding-top: 2rem;
 
       .container {
-        display: flex;
         justify-content: space-between;
 
         ul {
@@ -53,6 +86,54 @@ a {
             a {
               color: #FFF;
             }
+          }
+        }
+      }
+    }
+  }
+
+  #mastercraft {
+    transform: translateY(-4rem);
+
+    .container {
+      flex-direction: column;
+      text-align: center;
+      background-color: #FFF;
+      width: 50%;
+
+      .logo-mastercraft {
+        display: flex;
+        justify-content: center;
+
+        img {
+          position: absolute;
+          top: 0;
+          transform: translateY(-1.7rem);
+        }
+      }
+
+      .cta {
+        display: flex;
+        justify-content: space-between;
+        font-weight: $Font-Weight-500;
+        margin-top: 2rem;
+
+        .btn-bookmark {
+          background: #d1cccc;
+          color: #2F2F2F;
+          border-radius: 100vw;
+          padding-left: 3.5rem;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 43px;
+            height: 43px;
+            top: 0;
+            left: 0;
+            background: url(./images/icon-bookmark.svg) no-repeat;
+            background-size: cover;
           }
         }
       }

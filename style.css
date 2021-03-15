@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
-* {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -14,6 +16,9 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -24,6 +29,34 @@ li {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  margin-top: 1.5rem;
+}
+
+p {
+  color: #7a7a7a;
+}
+
+.border-radius {
+  border-radius: 6px;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-P-color {
+  background: #3cb4ac;
+  color: #FFF;
+  border-radius: 100vw;
 }
 
 #main #header {
@@ -37,9 +70,6 @@ a {
 }
 
 #main #header .navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -56,5 +86,66 @@ a {
 
 #main #header .navbar .container ul li a {
   color: #FFF;
+}
+
+#main #mastercraft {
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+#main #mastercraft .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #FFF;
+  width: 50%;
+}
+
+#main #mastercraft .container .logo-mastercraft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main #mastercraft .container .logo-mastercraft img {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-1.7rem);
+          transform: translateY(-1.7rem);
+}
+
+#main #mastercraft .container .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+#main #mastercraft .container .cta .btn-bookmark {
+  background: #d1cccc;
+  color: #2F2F2F;
+  border-radius: 100vw;
+  padding-left: 3.5rem;
+  position: relative;
+}
+
+#main #mastercraft .container .cta .btn-bookmark::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 0;
+  background: url(./images/icon-bookmark.svg) no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
