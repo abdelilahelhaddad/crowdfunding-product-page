@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 400;
+  background: rgba(122, 122, 122, 0.1);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main #header {
+  height: 50vh;
+  background: url(./images/image-hero-desktop.jpg) no-repeat;
+  background-size: cover;
+}
+
+#main #header .navbar {
+  padding-top: 2rem;
+}
+
+#main #header .navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main #header .navbar .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+}
+
+#main #header .navbar .container ul li a {
+  color: #FFF;
+}
+/*# sourceMappingURL=style.css.map */
