@@ -150,14 +150,21 @@ p {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        position: relative;
 
         h1 {
           text-align: left;
+          margin-top: 0;
         }
 
         p {
           margin-top: 0.5rem;
-          margin-bottom: 2.5rem;
+        }
+
+        .backers,
+        .day-left {
+          padding-left: 10%;
+          border-left: 2px solid rgba($N-Dark-gray, $alpha: 0.3);
         }
       }
 
@@ -166,6 +173,7 @@ p {
         height: 10px;
         background: rgba($N-Dark-gray, $alpha: 0.3);
         border-radius: 100vw;
+        margin-top: 2.5rem;
 
         .progressbar {
           width: 75%;
