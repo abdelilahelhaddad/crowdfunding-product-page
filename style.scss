@@ -54,6 +54,15 @@ p {
   color: $N-Dark-gray;
 }
 
+section {
+  margin-bottom: 1.5rem;
+  transform: translateY(-4rem);
+}
+
+.text-left {
+  text-align: left;
+}
+
 .border-radius {
   border-radius: 6px;
 }
@@ -100,7 +109,6 @@ p {
   }
 
   #mastercraft {
-    transform: translateY(-4rem);
 
     .container {
 
@@ -153,7 +161,6 @@ p {
         position: relative;
 
         h1 {
-          text-align: left;
           margin-top: 0;
         }
 

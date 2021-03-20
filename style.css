@@ -51,6 +51,16 @@ p {
   color: #7a7a7a;
 }
 
+section {
+  margin-bottom: 1.5rem;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.text-left {
+  text-align: left;
+}
+
 .border-radius {
   border-radius: 6px;
 }
@@ -96,11 +106,6 @@ p {
 
 #main #header .navbar .container ul li a {
   color: #FFF;
-}
-
-#main #mastercraft {
-  -webkit-transform: translateY(-4rem);
-          transform: translateY(-4rem);
 }
 
 #main #mastercraft .container .logo-mastercraft {
@@ -167,7 +172,6 @@ p {
 }
 
 #main #backing .container .backing-top h1 {
-  text-align: left;
   margin-top: 0;
 }
 
