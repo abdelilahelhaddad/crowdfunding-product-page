@@ -47,6 +47,9 @@ h3,
 p,
 .btn {
   margin-top: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 p {
