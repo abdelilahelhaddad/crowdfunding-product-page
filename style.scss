@@ -234,13 +234,17 @@ section {
       .box-bottom {
         position: relative;
 
-        span {
+        h2 span {
           position: absolute;
           top: 58%;
           font-size: 12px;
           color: $N-Dark-gray;
           padding-left: .4rem;
         }
+      }
+
+      &.disabled .box-bottom a {
+        cursor: not-allowed;
       }
     }
 
@@ -249,3 +253,60 @@ section {
     }
   }
 }
+
+//!Modal Start
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+//!Modal End

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Crowdfunding product page</title>
 </head>
 
@@ -33,7 +34,7 @@
         <h1>Mastercraft Bamboo Monitor Riser</h1>
         <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div class="cta">
-          <a class="btn btn-P-color" href="#">Back this project</a>
+          <a class="btn btn-P-color" data-modal-target="#modal" href="#">Back this project</a>
           <a class="btn btn-bookmark" href="#"> Bookmark</a>
         </div>
       </div>
@@ -110,6 +111,16 @@
       </div>
     </section>
   </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title"></div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+    </div>
+  </div>
+  <div id="overlay"></div>
 
   <!-- Selection modal start -->
 
