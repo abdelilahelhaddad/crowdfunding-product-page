@@ -280,7 +280,7 @@ section {
   border-radius: 10px;
   z-index: 10;
   background-color: white;
-  width: 500px;
+  width: 700px;
   max-width: 80%;
 }
 
@@ -331,5 +331,34 @@ section {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.modal-padd {
+  padding: 0 15px;
+}
+
+.modal-padd .title {
+  margin-top: 0;
+}
+
+.modal-body .pledge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #7a7a7a;
+}
+
+#pledge1 {
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.pledge-text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /*# sourceMappingURL=style.css.map */

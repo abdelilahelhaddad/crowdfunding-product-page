@@ -264,7 +264,7 @@ section {
   border-radius: 10px;
   z-index: 10;
   background-color: white;
-  width: 500px;
+  width: 700px;
   max-width: 80%;
 }
 
@@ -310,3 +310,28 @@ section {
 }
 
 //!Modal End
+
+.modal-padd {
+  padding: 0 15px;
+}
+
+.modal-padd .title {
+  margin-top: 0;
+}
+
+.modal-body .pledge {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid $N-Dark-gray;
+}
+
+#pledge1 {
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+
+.pledge-text {
+  align-self: flex-start;
+}
