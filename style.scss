@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 
-$P-Moderate-cyan: hsl(176, 50%, 47%);
-$P-Dark-cyan: hsl(176, 72%, 28%);
-$N-Black: hsl(0, 0%, 0%);
-$N-Dark-gray: hsl(0, 0%, 48%);
+$P-Moderate-cyan: #3cb4ac;
+$P-Dark-cyan: #147b74;
+$N-Black: #000000;
+$N-Dark-gray: #7a7a7a;
+
 $Font-Weight-400:400;
 $Font-Weight-500:500;
 $Font-Weight-700:700;
@@ -322,16 +323,20 @@ section {
 .modal-body .pledge {
   display: flex;
   width: 100%;
-  padding: 15px;
-  border: 1px solid $N-Dark-gray;
+  padding: 2rem;
+  border: 1px solid rgba($N-Dark-gray, $alpha: 0.3);
+  border-radius: 10px;
 }
 
 #pledge1 {
   margin-right: 2rem;
-  margin-top: 1.5rem;
   align-self: flex-start;
 }
 
 .pledge-text {
   align-self: flex-start;
+
+  h3 {
+    margin-top: 0;
+  }
 }

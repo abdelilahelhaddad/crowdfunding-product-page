@@ -346,13 +346,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 15px;
-  border: 1px solid #7a7a7a;
+  padding: 2rem;
+  border: 1px solid rgba(122, 122, 122, 0.3);
+  border-radius: 10px;
 }
 
 #pledge1 {
   margin-right: 2rem;
-  margin-top: 1.5rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -360,5 +360,9 @@ section {
 .pledge-text {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.pledge-text h3 {
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
