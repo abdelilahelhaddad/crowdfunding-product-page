@@ -312,7 +312,8 @@ section {
 }
 
 .modal-body {
-  padding: 10px 15px;
+  padding: 10px;
+  margin-top: 2rem;
 }
 
 #overlay {
@@ -351,10 +352,41 @@ section {
   border-radius: 10px;
 }
 
-#pledge1 {
+.radio {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
   margin-right: 2rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioR {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid rgba(122, 122, 122, 0.3);
+  border-radius: 50%;
+  margin-right: 2rem;
+  padding: 4px;
+}
+
+.radioR::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #3cb4ac;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.radioInput:checked + .radioR::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .pledge-text {
