@@ -283,7 +283,7 @@ section {
   width: 700px;
   max-width: 80%;
   height: 90vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .modal.active {
@@ -315,7 +315,7 @@ section {
 
 .modal-body {
   padding: 10px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 #overlay {
@@ -349,7 +349,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 10px;
 }
@@ -408,9 +408,30 @@ section {
 .pledge-text {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pledge-text h3 {
   margin-top: 0;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.pledge-text h3 span {
+  color: #7a7a7a;
+  font-weight: 400;
+}
+
+.pledge-text .pledgeCol {
+  color: #3cb4ac;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

@@ -270,7 +270,7 @@ section {
   width: 700px;
   max-width: 80%;
   height: 90vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .modal.active {
@@ -295,7 +295,7 @@ section {
 
 .modal-body {
   padding: 10px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 #overlay {
@@ -328,7 +328,7 @@ section {
 .modal-body .pledge {
   display: flex;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   border: 1px solid rgba($N-Dark-gray, $alpha: 0.3);
   border-radius: 10px;
 }
@@ -382,8 +382,24 @@ section {
 
 .pledge-text {
   align-self: flex-start;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   h3 {
     margin-top: 0;
+    margin-right: 0.5rem;
+    display: inline-block;
+
+    span {
+      color: $N-Dark-gray;
+      font-weight: $Font-Weight-400;
+    }
+  }
+
+  .pledgeCol {
+    color: $P-Moderate-cyan;
+    font-weight: $Font-Weight-500;
   }
 }
