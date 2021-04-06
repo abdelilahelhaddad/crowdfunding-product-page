@@ -491,7 +491,6 @@ section {
 .modal-body .pledge .price .buttons span::before {
   content: "$";
   position: absolute;
-  color: #7a7a7a;
   left: 20%;
   top: 45%;
   font-weight: 700;
