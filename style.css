@@ -311,6 +311,11 @@ section {
   background: none;
   font-size: 1.25rem;
   font-weight: bold;
+  color: #7a7a7a;
+}
+
+.modal-header .close-button:hover {
+  color: #000000;
 }
 
 .modal-body {
@@ -348,10 +353,20 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   padding: 2rem 1.5rem;
   border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 10px;
+}
+
+.modal-body .pledge .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .radio,
@@ -430,8 +445,28 @@ section {
   font-weight: 400;
 }
 
+.pledge-text h3:hover {
+  color: #3cb4ac;
+}
+
 .pledge-text .pledgeCol {
   color: #3cb4ac;
   font-weight: 500;
+}
+
+.modal-body .pledge .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgba(122, 122, 122, 0.3);
+  padding: 0 1.5rem;
+  margin: 2rem -1.5rem 0 -1.5rem;
+}
+
+.modal-body .pledge .price .buttons {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
