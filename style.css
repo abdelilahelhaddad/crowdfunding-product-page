@@ -469,4 +469,34 @@ section {
 .modal-body .pledge .price .buttons {
   margin-top: 2rem;
 }
+
+.modal-body .pledge .price .buttons span {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.8rem;
+}
+
+.modal-body .pledge .price .buttons input {
+  border: 2px solid rgba(122, 122, 122, 0.3);
+  border-radius: 100vh;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 2.8rem;
+  width: 5.5rem;
+  padding-left: 2rem;
+}
+
+.modal-body .pledge .price .buttons span::before {
+  content: "$";
+  position: absolute;
+  color: #7a7a7a;
+  left: 20%;
+  top: 45%;
+  font-weight: 700;
+  color: rgba(122, 122, 122, 0.5);
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+}
 /*# sourceMappingURL=style.css.map */

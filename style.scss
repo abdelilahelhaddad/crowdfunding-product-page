@@ -427,5 +427,33 @@ section {
 
   .buttons {
     margin-top: 2rem;
+
+    span {
+      display: inline-block;
+      position: relative;
+      margin-right: 0.8rem;
+    }
+
+    input {
+      border: 2px solid rgba($N-Dark-gray, $alpha: 0.3);
+      border-radius: 100vh;
+      box-shadow: none;
+      font-size: 16px;
+      font-weight: $Font-Weight-700;
+      height: 2.8rem;
+      width: 5.5rem;
+      padding-left: 2rem;
+    }
+
+    span::before {
+      content: "$";
+      position: absolute;
+      color: $N-Dark-gray;
+      left: 20%;
+      top: 45%;
+      font-weight: $Font-Weight-700;
+      color: rgba($N-Dark-gray, $alpha: 0.5);
+      transform: translateY(-45%);
+    }
   }
 }
