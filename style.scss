@@ -386,7 +386,7 @@ section {
 .radioInput:checked+.radioR::after,
 .radioInput2:checked+.radioR2::after,
 .radioInput3:checked+.radioR3::after,
-.radioInput4:disabled+.radioR4::after {
+.radioInput4:disabled+.radioR4:disabled::after {
   transform: scale(1);
 }
 
