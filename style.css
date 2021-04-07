@@ -455,9 +455,7 @@ section {
 }
 
 .modal-body .pledge .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -467,7 +465,7 @@ section {
 }
 
 .modal-body .pledge .price .buttons {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .modal-body .pledge .price .buttons span {

@@ -419,14 +419,14 @@ section {
 }
 
 .modal-body .pledge .price {
-  display: flex;
+  display: none;
   justify-content: space-between;
   border-top: 1px solid rgba($N-Dark-gray, $alpha: 0.3);
   padding: 0 1.5rem;
   margin: 2rem -1.5rem 0 -1.5rem;
 
   .buttons {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 
     span {
       display: inline-block;
