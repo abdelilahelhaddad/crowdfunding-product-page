@@ -37,7 +37,7 @@ function closeModal(modal) {
 
 let pledge = document.querySelectorAll(".pledge");
 let price = document.querySelectorAll(".price");
-let radio = document.querySelectorAll("input");
+let radio = document.querySelectorAll("input[name=pledge1]");
 
 function check() {
   for (let i = 0; i < radio.length; i++) {
