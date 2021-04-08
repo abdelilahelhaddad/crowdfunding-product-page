@@ -447,6 +447,7 @@ section {
 
 .pledge-text h3:hover {
   color: #3cb4ac;
+  cursor: pointer;
 }
 
 .pledge-text .pledgeCol {
@@ -484,6 +485,11 @@ section {
   height: 2.8rem;
   width: 5.5rem;
   padding-left: 2rem;
+}
+
+.modal-body .pledge .price .buttons input:focus {
+  outline: none;
+  cursor: pointer;
 }
 
 .modal-body .pledge .price .buttons span::before {

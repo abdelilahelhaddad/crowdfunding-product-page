@@ -409,7 +409,9 @@ section {
 
     &:hover {
       color: $P-Moderate-cyan;
+      cursor: pointer;
     }
+
   }
 
   .pledgeCol {
@@ -443,6 +445,11 @@ section {
       height: 2.8rem;
       width: 5.5rem;
       padding-left: 2rem;
+    }
+
+    input:focus {
+      outline: none;
+      cursor: pointer;
     }
 
     span::before {
