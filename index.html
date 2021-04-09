@@ -112,7 +112,11 @@
     </section>
   </main>
 
-  <!-- <div class="modal" id="modal">
+
+  <!-- Start Modal -->
+
+
+  <div class="modal" id="modal">
     <div class="modal-header">
       <div class="title"></div>
       <button data-close-button class="close-button">&times;</button>
@@ -140,7 +144,7 @@
           <p>Enter your pledge</p>
           <div class="buttons">
             <span><input class="input_price" type="number" value="0" min="0" name="" id=""></span>
-            <a href="#" class="btn btn-P-color">Continue</a>
+            <a id="open" data-close-button href="#" class="btn btn-P-color continue">Continue</a>
           </div>
         </div>
       </div>
@@ -166,7 +170,7 @@
           <p>Enter your pledge</p>
           <div class="buttons">
             <span><input class="input_price" type="number" value="25" min="25" name="radionBtn" id="radionBtn"></span>
-            <a href="#" class="btn btn-P-color">Continue</a>
+            <a id="open" data-close-button href="#" class="btn btn-P-color continue">Continue</a>
           </div>
         </div>
       </div>
@@ -192,7 +196,7 @@
           <p>Enter your pledge</p>
           <div class="buttons">
             <span><input class="input_price" type="number" value="75" min="75" name="" id=""></span>
-            <a href="#" class="btn btn-P-color">Continue</a>
+            <a id="open" data-close-button href="#" class="btn btn-P-color continue">Continue</a>
           </div>
         </div>
       </div>
@@ -218,38 +222,25 @@
           <p>Enter your pledge</p>
           <div class="buttons">
             <span><input class="input_price" type="number" value="200" min="200" name="" id=""></span>
-            <a href="#" class="btn btn-P-color">Continue</a>
+            <a id="open" data-close-button href="#" class="btn btn-P-color continue">Continue</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="overlay"></div> -->
+  <div id="overlay" class="overlay1"></div>
 
-  <div class="modal" id="modal">
-    <div class="modal-header">
-      <div class="title"></div>
-      <!-- <button data-close-button class="close-button">&times;</button> -->
-    </div>
-    <div class="modal-padd">
+  <div class="modal-container" id="modal_container">
+    <div class="modalo">
       <img src="./images/icon-check.svg" alt="">
-      <h2 class="title">Thanks for your support!</h2>
+      <h1>Thanks for your support!</h1>
       <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
         an email once our campaign is completed.</p>
-      <a href="#" class="btn btn-P-color">Got it!</a>
+      <a id="close" class="btn btn-P-color">
+        Got it!
+      </a>
     </div>
-    <!-- <div class="modal-body">
-      <h2 class="title">Thanks for your support!</h2>
-      <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-        an email once our campaign is completed.</p>
-      <a href="#" class="btn btn-P-color">Got it!</a>
-    </div> -->
   </div>
-  <div id="overlay"></div>
-  <!-- Thanks for your support!
-  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-  an email once our campaign is completed.
-  Got it! -->
 
 </body>
 

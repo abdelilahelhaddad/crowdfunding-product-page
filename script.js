@@ -42,13 +42,27 @@ let radio = document.querySelectorAll("input[name=pledge1]");
 function check() {
   for (let i = 0; i < radio.length; i++) {
     if (radio[i].type == 'radio' && radio[i].checked) {
-      console.log(radio[i]);
       radio[i].parentElement.parentElement.parentElement.style.borderColor = "#147b74";
       radio[i].parentElement.parentElement.nextElementSibling.style.display = "flex";
     } else {
-      console.log(radio[i]);
       radio[i].parentElement.parentElement.parentElement.style.borderColor = `rgba(122,122,122,0.3)`;
       radio[i].parentElement.parentElement.nextElementSibling.style.display = "none";
     }
   }
+}
+
+
+const openo = document.querySelectorAll('#open');
+const close = document.querySelector('#close');
+const modalo = document.getElementById('modal_container');
+
+for (let i = 0; i < openo.length; i++) {
+  let opena = openo[i];
+  opena.addEventListener('click', () => {
+    modalo.classList.add('show');
+  });
+
+  close.addEventListener('click', () => {
+    modalo.classList.remove('show');
+  });
 }
