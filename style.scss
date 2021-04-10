@@ -488,31 +488,31 @@ section {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 30px 50px;
+  padding: 25px 35px;
   text-align: center;
-  width: 600px;
+  width: 450px;
   max-width: 100%;
-  // transform: translateY(-200%);
-  // transition: transform 0.3s ease;
 }
 
-.modal_container.show .modalo {
-  transform: translateY(0);
-}
-
-.modalo h1 {
-  margin: 0;
+.modalo h2 {
+  font-size: 20px;
+  font-weight: $Font-Weight-700;
 }
 
 .modalo p {
+  color: $N-Dark-gray;
   font-size: 14px;
-  opacity: 0.7;
+  margin-top: 1rem;
 }
 
 .modalo {
+  img {
+    margin-bottom: 1rem;
+  }
+
   a {
     display: inline-block;
-    margin: 2rem 0;
+    margin: 1.7rem;
     cursor: pointer;
 
     &:hover {
