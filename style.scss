@@ -34,7 +34,8 @@ body {
   flex-direction: column;
   text-align: center;
   background-color: #FFF;
-  width: 50%;
+  width: 700px;
+  max-width: 90%;
 }
 
 .disabled {
@@ -91,6 +92,10 @@ section {
   background: $P-Moderate-cyan;
   color: #FFF;
   border-radius: 100vw;
+
+  &:hover {
+    background: $P-Dark-cyan;
+  }
 }
 
 .btn-N-color {
@@ -514,9 +519,5 @@ section {
     display: inline-block;
     margin: 1.7rem;
     cursor: pointer;
-
-    &:hover {
-      background: $P-Dark-cyan;
-    }
   }
 }

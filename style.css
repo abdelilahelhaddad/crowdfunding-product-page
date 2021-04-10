@@ -30,7 +30,8 @@ body {
           flex-direction: column;
   text-align: center;
   background-color: #FFF;
-  width: 50%;
+  width: 700px;
+  max-width: 90%;
 }
 
 .disabled {
@@ -90,6 +91,10 @@ section {
   background: #3cb4ac;
   color: #FFF;
   border-radius: 100vw;
+}
+
+.btn-P-color:hover {
+  background: #147b74;
 }
 
 .btn-N-color {
@@ -560,9 +565,5 @@ section {
   display: inline-block;
   margin: 1.7rem;
   cursor: pointer;
-}
-
-.modalo a:hover {
-  background: #147b74;
 }
 /*# sourceMappingURL=style.css.map */
