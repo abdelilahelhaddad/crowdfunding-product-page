@@ -164,18 +164,16 @@ section {
   color: #2F2F2F;
   border-radius: 100vw;
   padding-left: 3.5rem;
+  font-weight: 700;
   position: relative;
 }
 
-#main #mastercraft .container .cta .btn-bookmark::before {
-  content: "";
+#main #mastercraft .container .cta .btn-bookmark svg {
   position: absolute;
   width: 43px;
   height: 43px;
   top: 0;
   left: 0;
-  background: url(./images/icon-bookmark.svg) no-repeat;
-  background-size: cover;
 }
 
 #main #backing .container .backing-top {

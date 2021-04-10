@@ -51,7 +51,6 @@ function check() {
   }
 }
 
-
 const openo = document.querySelectorAll('#open');
 const close = document.querySelector('#close');
 const modalo = document.getElementById('modal_container');
@@ -66,3 +65,18 @@ for (let i = 0; i < openo.length; i++) {
     modalo.classList.remove('show');
   });
 }
+
+const bookmark = document.querySelector(".btn-bookmark");
+
+bookmark.addEventListener("click", () => {
+  bookmark.innerHTML = `
+  <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#147b74" cx="21" cy="21" r="21" />
+                <path transform="translate(-7,-4)" fill="#FFF" d="M23 19v18l5-5.058L33 37V19z" />
+              </g>
+            </svg> Bookmarked
+  `;
+  bookmark.style.color = "#147b74";
+  bookmark.style.background = `#d9e6e5`;
+});
