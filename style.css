@@ -541,7 +541,17 @@ section {
   padding: 25px 35px;
   text-align: center;
   width: 450px;
-  max-width: 100%;
+  max-width: 90%;
+}
+
+.modalo img {
+  margin-bottom: 1rem;
+}
+
+.modalo a {
+  display: inline-block;
+  margin: 1.7rem;
+  cursor: pointer;
 }
 
 .modalo h2 {
@@ -553,15 +563,5 @@ section {
   color: #7a7a7a;
   font-size: 14px;
   margin-top: 1rem;
-}
-
-.modalo img {
-  margin-bottom: 1rem;
-}
-
-.modalo a {
-  display: inline-block;
-  margin: 1.7rem;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
