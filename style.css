@@ -548,12 +548,6 @@ section {
   margin-bottom: 1rem;
 }
 
-.modalo a {
-  display: inline-block;
-  margin: 1.7rem;
-  cursor: pointer;
-}
-
 .modalo h2 {
   font-size: 20px;
   font-weight: 700;
@@ -563,5 +557,11 @@ section {
   color: #7a7a7a;
   font-size: 14px;
   margin-top: 1rem;
+}
+
+.modalo a {
+  display: inline-block;
+  margin: 1.7rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

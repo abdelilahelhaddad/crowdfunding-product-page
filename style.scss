@@ -501,22 +501,20 @@ section {
     margin-bottom: 1rem;
   }
 
+  h2 {
+    font-size: 20px;
+    font-weight: $Font-Weight-700;
+  }
+
+  p {
+    color: $N-Dark-gray;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
   a {
     display: inline-block;
     margin: 1.7rem;
     cursor: pointer;
   }
 }
-
-.modalo h2 {
-  font-size: 20px;
-  font-weight: $Font-Weight-700;
-}
-
-.modalo p {
-  color: $N-Dark-gray;
-  font-size: 14px;
-  margin-top: 1rem;
-}
-
-.modalo {}
