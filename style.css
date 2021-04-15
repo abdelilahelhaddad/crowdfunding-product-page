@@ -132,6 +132,22 @@ section {
   color: #FFF;
 }
 
+#main #header .navbar .container .hamburger-nav {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  #main #header .navbar .container {
+    width: 90%;
+  }
+  #main #header .navbar .container ul {
+    display: none;
+  }
+  #main #header .navbar .container .hamburger-nav {
+    display: block;
+  }
+}
+
 #main #mastercraft .container .logo-mastercraft {
   display: -webkit-box;
   display: -ms-flexbox;

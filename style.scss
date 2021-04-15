@@ -128,6 +128,23 @@ section {
             }
           }
         }
+
+        .hamburger-nav {
+          display: none;
+        }
+
+        @media screen and (max-width:720px) {
+          width: 90%;
+
+          ul {
+            display: none;
+          }
+
+          .hamburger-nav {
+            display: block;
+          }
+
+        }
       }
     }
   }
