@@ -80,3 +80,15 @@ bookmark.addEventListener("click", () => {
   bookmark.style.color = "#147b74";
   bookmark.style.background = `#d9e6e5`;
 });
+
+const open_nav = document.querySelector('#open_nav');
+const close_nav = document.querySelector('#close_nav');
+const nav_modalo = document.getElementById('ham-nav-modal_container');
+
+open_nav.addEventListener('click', () => {
+  nav_modalo.classList.add('show');
+});
+
+close_nav.addEventListener('click', () => {
+  nav_modalo.classList.remove('show');
+});
