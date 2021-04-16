@@ -567,10 +567,22 @@ section {
 
 .ham-nav-modalo {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 25px 35px;
-  text-align: center;
+  text-align: left;
   width: 450px;
   max-width: 90%;
+
+  ul {
+    li {
+      padding: 25px 35px;
+      border-bottom: 1px solid rgba($color: $N-Dark-gray, $alpha: 0.4);
+
+      a {
+        color: $N-Black;
+        font-weight: $Font-Weight-700;
+        font-size: 20px;
+      }
+    }
+  }
 }

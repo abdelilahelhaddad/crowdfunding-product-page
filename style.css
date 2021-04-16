@@ -625,12 +625,22 @@ section {
 
 .ham-nav-modalo {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 7px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 25px 35px;
-  text-align: center;
+  text-align: left;
   width: 450px;
   max-width: 90%;
+}
+
+.ham-nav-modalo ul li {
+  padding: 25px 35px;
+  border-bottom: 1px solid rgba(122, 122, 122, 0.4);
+}
+
+.ham-nav-modalo ul li a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
