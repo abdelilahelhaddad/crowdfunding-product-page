@@ -117,6 +117,9 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #main #header .navbar .container ul {
@@ -145,6 +148,13 @@ section {
   }
   #main #header .navbar .container .hamburger-nav {
     display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #main #header {
+    background: url(./images/image-hero-mobile.jpg) no-repeat;
+    background-size: cover;
   }
 }
 
@@ -192,6 +202,27 @@ section {
   left: 0;
 }
 
+@media screen and (max-width: 720px) {
+  #main #mastercraft .card {
+    text-align: center;
+  }
+  #main #mastercraft .card .cta {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #main #mastercraft .card .cta .btn-P-color {
+    padding: 0.9rem 2.3rem;
+  }
+  #main #mastercraft .card .cta .btn-bookmark {
+    background: transparent;
+    padding-left: 0;
+    font-size: 0;
+  }
+  #main #mastercraft .card .cta .btn-bookmark svg {
+    position: static;
+  }
+}
+
 #main #backing .container .backing-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +267,44 @@ section {
   background: #3cb4ac;
   height: 10px;
   border-radius: 100vw;
+}
+
+@media screen and (max-width: 720px) {
+  #main #backing .container .backing-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #main #backing .container .backing-top h1 {
+    margin-top: 1rem;
+  }
+  #main #backing .container .backing-top p {
+    margin-top: 0.5rem;
+  }
+  #main #backing .container .backing-top .backers,
+  #main #backing .container .backing-top .day-left {
+    padding-left: 0;
+    border-left: none;
+  }
+  #main #backing .container .backing-top .backed,
+  #main #backing .container .backing-top .backers {
+    border-bottom: 1px solid rgba(122, 122, 122, 0.4);
+  }
+  #main #backing .container .backing-top .backed p,
+  #main #backing .container .backing-top .backers p {
+    padding-bottom: 1.5rem;
+  }
 }
 
 #main #about-project .about {
