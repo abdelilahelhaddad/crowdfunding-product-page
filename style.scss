@@ -340,11 +340,37 @@ section {
       &.disabled .box-bottom a {
         cursor: not-allowed;
       }
+
+      @media screen and (max-width:720px) {
+
+        .box-top,
+        .box-bottom {
+          flex-direction: column;
+
+          h3,
+          p,
+          h2,
+          a {
+            align-self: baseline;
+          }
+
+          h2 {
+            display: flex;
+            align-items: flex-end;
+          }
+
+          h2 span {
+            position: static;
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
     }
-
-
   }
+
+
 }
+
 
 //!Modal Start
 .modal {

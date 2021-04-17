@@ -357,6 +357,41 @@ section {
   cursor: not-allowed;
 }
 
+@media screen and (max-width: 720px) {
+  #main #about-project .box .box-top,
+  #main #about-project .box .box-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main #about-project .box .box-top h3,
+  #main #about-project .box .box-top p,
+  #main #about-project .box .box-top h2,
+  #main #about-project .box .box-top a,
+  #main #about-project .box .box-bottom h3,
+  #main #about-project .box .box-bottom p,
+  #main #about-project .box .box-bottom h2,
+  #main #about-project .box .box-bottom a {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  #main #about-project .box .box-top h2,
+  #main #about-project .box .box-bottom h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #main #about-project .box .box-top h2 span,
+  #main #about-project .box .box-bottom h2 span {
+    position: static;
+    padding-bottom: 0.5rem;
+  }
+}
+
 .modal {
   position: fixed;
   top: 50%;
