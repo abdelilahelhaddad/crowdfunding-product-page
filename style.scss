@@ -465,6 +465,10 @@ section {
   display: inline-flex;
   cursor: pointer;
   margin-right: 2rem;
+
+  @media screen and (max-width:720px) {
+    height: 50px;
+  }
 }
 
 .radioInput,
@@ -533,6 +537,23 @@ section {
     color: $P-Moderate-cyan;
     font-weight: $Font-Weight-500;
   }
+
+  p {
+    line-height: 1.5rem;
+  }
+
+  @media screen and (max-width:720px) {
+    >h3 {
+      order: 4;
+      margin-left: -3.4rem;
+      margin-top: 1rem;
+    }
+
+    p {
+      margin-left: -3.4rem;
+      line-height: 1.5rem;
+    }
+  }
 }
 
 .modal-body .pledge .price {
@@ -576,6 +597,10 @@ section {
       color: rgba($N-Dark-gray, $alpha: 0.5);
       transform: translateY(-45%);
     }
+  }
+
+  @media screen and (max-width:720px) {
+    flex-direction: column;
   }
 }
 

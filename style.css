@@ -503,6 +503,15 @@ section {
   margin-right: 2rem;
 }
 
+@media screen and (max-width: 720px) {
+  .radio,
+  .radio2,
+  .radio3,
+  .radio4 {
+    height: 50px;
+  }
+}
+
 .radioInput,
 .radioInput2,
 .radioInput3,
@@ -578,6 +587,24 @@ section {
   font-weight: 500;
 }
 
+.pledge-text p {
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  .pledge-text > h3 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-left: -3.4rem;
+    margin-top: 1rem;
+  }
+  .pledge-text p {
+    margin-left: -3.4rem;
+    line-height: 1.5rem;
+  }
+}
+
 .modal-body .pledge .price {
   display: none;
   -webkit-box-pack: justify;
@@ -624,6 +651,15 @@ section {
   color: rgba(122, 122, 122, 0.5);
   -webkit-transform: translateY(-45%);
           transform: translateY(-45%);
+}
+
+@media screen and (max-width: 720px) {
+  .modal-body .pledge .price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .modal-container {
